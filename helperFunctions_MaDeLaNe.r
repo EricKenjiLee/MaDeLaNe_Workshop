@@ -29,8 +29,8 @@ readJianingData = function(MatFile)
   data = CreateSeuratObject(counts = t(mergedISI), assay = "ISI")
   data$orig.ident = temp$true.cell.type;
   
-  load("width.Rda")
-  load("ratio_p2t.Rda")
+  load("MaDeLaNe_Workshop/width.Rda")
+  load("MaDeLaNe_Workshop/ratio_p2t.Rda")
   ratio.p2t = ratio_p2t
   temp$features = cbind(temp$features,width,ratio.p2t)
 
